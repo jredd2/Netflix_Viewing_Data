@@ -36,8 +36,7 @@ jobs:
         run: jupyter execute Netflix_Data_Analysis.ipynb
         shell: bash 
 
-      - id: push 
-        name: Build and Push Docker Image
+      - name: Build and Push Docker Image
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
           image: jredd2/netflix-python-data-app
